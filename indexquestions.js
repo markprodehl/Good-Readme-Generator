@@ -27,35 +27,35 @@ inquirer.prompt([{
     },
     {
         type: "input",
-        message: "Please, provide a brief a description of your project?",
+        message: "Please, provide a detailed description of your project?",
         name: "description",
     },
-    // {
-    //     type: "input",
-    //     message: "List the headings you would like to include in your Table Of Contents",
-    //     name: "tableOfContents",
-    // },
-    // {
-    //     type: "list",
-    //     message: "What kind of license should your project have?",
-    //     name: "license",
-    //     choices: ["MIT", "Apache 2.0", "Mozilla Public License 2.0", "GPL", "BSD", "None"]
-    // },
-    // {
-    //     type: "input",
-    //     message: "List the names of the people contributing to the project",
-    //     name: "contributors",
-    // },
-    // {
-    //     type: "input",
-    //     message: "What tests will you run to make sure there are no bugs?",
-    //     name: "tests",
-    // },
-    // {
-    //     type: "input",
-    //     message: "Would you user need to answer any questions?",
-    //     name: "questions",
-    // },
+    {
+        type: "input",
+        message: "List the items you would like to include in your Table Of Contents",
+        name: "tableOfContents",
+    },
+    {
+        type: "list",
+        message: "What kind of license will your project have?",
+        name: "license",
+        choices: ["MIT", "Apache 2.0", "Mozilla Public License 2.0", "GPL", "BSD", "None"]
+    },
+    {
+        type: "input",
+        message: "List the names of the people contributing to the project",
+        name: "contributors",
+    },
+    {
+        type: "input",
+        message: "What tests will you run?",
+        name: "tests",
+    },
+    {
+        type: "input",
+        message: "Would you user need to answer any questions?",
+        name: "questions",
+    },
 
 
 

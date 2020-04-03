@@ -6,8 +6,8 @@ const util = require("util");
 const inquirer = require("inquirer");
 const axios = require("axios");
 const writeFile = util.promisify(fs.writeFile);
-const markdown = []
-    // ask user for github username
+
+// ask user for github username
 inquirer
     .prompt([{
             type: "input",
@@ -61,9 +61,6 @@ inquirer
     .then(answers => {
         console.log(answers)
             //create variables from the user
-
-        // const projectTitle = answers.projectTitle
-
 
         //calling on the GitHub API
         const url = `https://api.github.com/users/${answers.username}`;
