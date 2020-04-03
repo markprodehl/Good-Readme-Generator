@@ -29,71 +29,54 @@ inquirer
             message: "Please, provide a detailed description of your project?",
             name: "description",
         },
+        // {
+        //     type: "checkbox",
+        //     message: "Check all of items you would like to include in your Table Of Contents",
+        //     name: "tableOfContents",
+        //     choices: ["Installation", "Usage", "License", "Contributing", "Tests", "Questions", "Contact"]
+        // },
         {
             type: "input",
-            message: "List the items you would like to include in your Table Of Contents",
-            name: "tableOfContents",
+            message: "Provide the instalation instructions here",
+            name: "installation",
         },
-        // {
-        //     type: "list",
-        //     message: "What kind of license will your project have?",
-        //     name: "license",
-        //     choices: ["MIT", "Apache 2.0", "Mozilla Public License 2.0", "GPL", "BSD", "None"]
-        // },
-        // {
-        //     type: "input",
-        //     message: "List the names of the people contributing to the project",
-        //     name: "contributors",
-        // },
-        // {
-        //     type: "input",
-        //     message: "What tests will you run?",
-        //     name: "tests",
-        // },
-        // {
-        //     type: "input",
-        //     message: "Will your users need to answer any questions?",
-        //     name: "questions",
-        // },
+        {
+            type: "input",
+            message: "What will your application be used for?",
+            name: "usage",
+        },
+        {
+            type: "list",
+            message: "What kind of license does your project have?",
+            name: "license",
+            choices: ["MIT", "Apache 2.0", "Mozilla Public License 2.0", "GPL", "BSD", "None"]
+        },
+        {
+            type: "input",
+            message: "List the names of the people contributing to the project",
+            name: "contributing",
+        },
+        {
+            type: "input",
+            message: "What tests have been used to ensure that your application is working as intended?",
+            name: "tests",
+        },
+        {
+            type: "input",
+            message: "Will your users need to answer any questions?",
+            name: "questions",
+        },
+        {
+            type: "input",
+            message: "What is your email address?",
+            name: "contact",
+        },
+
 
 
     ])
     .then(answers => {
         console.log(answers)
-            //             return `
-            //             # Profile!
-
-        // ![markprodehl avatar](https://avatars2.githubusercontent.com/u/31394631?v=4)
-
-        // # Username
-
-        // # Email
-
-
-        // ## Project Title
-
-
-        // ## Description
-
-
-        // ## Table Of Contents
-
-
-        // ## Licence
-
-
-        // ## Contributors
-
-
-        // ## Tests
-
-
-        // ## Questions 
-
-        //         `
-
-        // *********************
-        //create variables from the user
 
         //calling on the GitHub API
         console.log(answers.projectTitle)
@@ -110,12 +93,20 @@ inquirer
                 // render markdown with an image
                 const markdown = [`# Readme!
             \n ![${login} avatar](${avatar_url}),
-            \n # Username: ${login}
-            \n # Email: 
-            \n # Project Title:\n ${answers.projectTitle}
+            \n ## Username: ${login}
+            \n # ${answers.projectTitle}
+            \n ${answers.description}
+            \n ## Table Of Contents
+            \n ### 1. Installation
+            \n ### 2. Usage
+            \n ### 3. License
+            \n ### 4. Contributing
+            \n ### 5. Tests
+            \n ### 6. Questions
+            \n ### 7. Contact
             
-             
-                    
+
+                                
             `]
 
                 // save markdown to file
