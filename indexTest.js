@@ -37,7 +37,7 @@ inquirer
         // },
         {
             type: "input",
-            message: "Provide the instalation instructions here",
+            message: "Provide the installation instructions here",
             name: "installation",
         },
         {
@@ -91,10 +91,9 @@ inquirer
                 // const avatar = url = response.data.avatar_url;
                 // const login = repsonse.data.login;
                 // render markdown with an image
-                const markdown = [`# Readme!
-            \n ![${login} avatar](${avatar_url}),
-            \n ## Username: ${login}
-            \n # ${answers.projectTitle}
+                const markdown = [`![${login} avatar](${avatar_url})
+            \n # ${answers.projectTitle}                                     
+            \n ## Description:
             \n ${answers.description}
             \n ## Table Of Contents
             \n ### 1. Installation
@@ -104,6 +103,23 @@ inquirer
             \n ### 5. Tests
             \n ### 6. Questions
             \n ### 7. Contact
+            \n ## Installation
+            \n ${answers.installation}
+            \n ## Usage
+            \n ${answers.usage}
+            \n ## License
+            \n ![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-blue.svg)
+            \n ${answers.license}
+            \n ## Contributing
+            \n ${answers.contributing}
+            \n ## Tests
+            \n ${answers.tests}
+            \n ## Questions
+            \n ${answers.questions}
+            \n ## Contact
+            \n ${answers.contact}           
+            \n ### GitHub Username: ${login}
+
             
 
                                 
