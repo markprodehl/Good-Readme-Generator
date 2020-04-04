@@ -5,8 +5,6 @@
 
 ![markprodehl avatar](https://avatars2.githubusercontent.com/u/31394631?v=4)
 
-# Email
-
 ## Badge
 
 ## Project Title
@@ -31,10 +29,12 @@
 ## Licence
 
 
-## Contributors
+## Contributing
 
 
 ## Tests
 
 
 ## Questions 
+
+## Contact

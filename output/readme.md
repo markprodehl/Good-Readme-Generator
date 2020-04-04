@@ -4,7 +4,7 @@
             
  ![markprodehl avatar](https://avatars2.githubusercontent.com/u/31394631?v=4)                                    
             
- ## Description:
+ # Description:
             
  An easy to use command-line application that dynamically generates a README.md from a user's input. The user's GitHub username and avatar are pulled from GitHub and included in the markdown along with the chosen license badge.
             
@@ -22,7 +22,7 @@
             
  ### 6. Questions
             
- ###7. Contact
+ ### 7. Contact
             
  # Installation
             

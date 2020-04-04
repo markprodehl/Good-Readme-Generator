@@ -79,7 +79,7 @@ inquirer
                 const markdown = [`
             \n # ${answers.projectTitle} 
             \n ![${login} avatar](${avatar_url})                                    
-            \n ## Description:
+            \n # Description:
             \n ${answers.description}
             \n # Table Of Contents
             \n ### 1. Installation
@@ -88,7 +88,7 @@ inquirer
             \n ### 4. Contributors
             \n ### 5. Tests
             \n ### 6. Questions
-            \n ###7. Contact
+            \n ### 7. Contact
             \n # Installation
             \n ${answers.installation}
             \n # Usage
