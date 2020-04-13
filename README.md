@@ -13,4 +13,4 @@ Axios
 GitHub APi
 
 
-![Screenshot](Assets/Readme%20Screenshot.png)
+![Screenshot](assets/readme-picture.png)

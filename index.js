@@ -22,7 +22,7 @@ inquirer
         },
         {
             type: "input",
-            message: "Provide the installation instructions here",
+            message: "Provide the installation instructions here:",
             name: "installation",
         },
         {
@@ -78,7 +78,7 @@ inquirer
                 // render markdown with an image
                 const markdown = [`
             \n # ${answers.projectTitle} 
-            \n ![${login} avatar](${avatar_url})                                    
+                                               
             \n # Description:
             \n ${answers.description}
             \n # Table Of Contents
@@ -102,9 +102,12 @@ inquirer
             \n # Questions
             \n ${answers.questions}
             \n # Contact
+            \n <img src="${avatar_url}" alt="avatar" style="border-radius: 64px" width="60"/>
             \n ${answers.contact}           
             \n GitHub Username: ${login}                               
             `]
+                    // inserting the code below will provide a larger picture of the github repo holders avatar
+                    // \n ![${login} avatar](${avatar_url}) 
                     // save markdown to file
                 return writeFile("output/readme.md", markdown);
             })

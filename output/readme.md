@@ -1,8 +1,7 @@
 
             
  # Readme Generator 
-            
- ![markprodehl avatar](https://avatars2.githubusercontent.com/u/31394631?v=4)                                    
+                                               
             
  # Description:
             
@@ -30,11 +29,11 @@
             
  # Usage
             
- Software developers that need to make a readme markdown file from a template.
+ Using the command line invoked the application with the following command: node index.js
             
  # License
             
- ![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+ ![License: None](https://img.shields.io/badge/License-None-blue.svg)
             
  # Contributing
             
@@ -46,9 +45,11 @@
             
  # Questions
             
- Yes, users will be guided through a sequence of questions designed to get the information required to populate the readme.md file.
+ Users will be prompted for questions about their project in order to populate the readme.md.
             
  # Contact
+            
+ <img src="https://avatars2.githubusercontent.com/u/31394631?v=4" alt="avatar" style="border-radius: 64px" width="60"/>
             
  markprodehl@gmail.com           
             
